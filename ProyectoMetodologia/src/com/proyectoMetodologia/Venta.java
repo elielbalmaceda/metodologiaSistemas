@@ -2,7 +2,7 @@ package com.proyectoMetodologia;
 
 import java.time.LocalDate;
 
-// Clase Venta para gestionar las transacciones
+// Clase Venta para gestionar las transacciones.
 public class Venta {
     private int ventaId;
     private Cliente cliente;
