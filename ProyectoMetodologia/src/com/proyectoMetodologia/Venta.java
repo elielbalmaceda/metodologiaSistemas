@@ -2,7 +2,7 @@ package com.proyectoMetodologia;
 
 import java.time.LocalDate;
 
-// Clase Venta para gestionar las transacciones
+// Clase Venta para gestionar las transacciones.
 public class Venta {
     private int ventaId;
     private Cliente cliente;
@@ -16,16 +16,16 @@ public class Venta {
         this.cliente = cliente;
         this.vendedor = vendedor;
         this.vehiculo = vehiculo;
-        this.fecha = LocalDate.now();
+        this.fecha = LocalDate.now(); //Se inicializa con la fecha actual
         this.formaPago = formaPago;
-        this.montoTotal = vehiculo.calcularPrecioFinal();
+        this.montoTotal = vehiculo.calcularPrecioFinal(); //Calculado en funcion del metodo
     }
-
+    //Valida la disponibilidad del vehiculo.
     public boolean procesarVenta(){
         if(!vehiculo.estaDisponible()){
             return false; 
         }
-
+            //Si el vehiculo esta disponible, lo marca como vendido, registra la compra en el cliente y la venta del vendedor.
         try {
             vehiculo.marcarComoVendido();
             cliente.agregarCompra(this);
@@ -36,6 +36,7 @@ public class Venta {
         }
     }
 
+    //Metodo que genera un comprobante de venta. Devuelve un string que contiene la informacion del comprobante
     public String generarComprobante(){
         return "Comprobante de Venta\n" +
         "Fecha: " + fecha + "\n" +
