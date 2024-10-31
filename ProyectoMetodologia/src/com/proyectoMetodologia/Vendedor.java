@@ -24,3 +24,4 @@ public class Vendedor extends Persona {
         ventas.add(venta);
     }
 }
+ssssss

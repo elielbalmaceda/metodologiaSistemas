@@ -32,5 +32,3 @@ public class App {
             System.out.println("Vehículos disponibles: " + disponibles.size());
         }
   }
-    }
-}
