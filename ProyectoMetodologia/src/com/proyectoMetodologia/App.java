@@ -1,4 +1,5 @@
 package com.proyectoMetodologia;
+
 import java.util.List;
 
 public class App {
@@ -12,7 +13,7 @@ public class App {
             sistema.registrarCliente(cliente);
     
             // Crear un vendedor
-            Vendedor vendedor = new Vendedor("Ana López", "87654321", "555-5678", "ana@email.com", "V001", 5.0);
+            Vendedor vendedor = new Vendedor("Milton Tarpin", "87654321", "555-5678", "mt@email.com", "V001", 5.0);
             sistema.registrarVendedor(vendedor);
     
             // Agregar un vehículo
@@ -32,5 +33,4 @@ public class App {
             System.out.println("Vehículos disponibles: " + disponibles.size());
         }
   }
-    }
-}
+
