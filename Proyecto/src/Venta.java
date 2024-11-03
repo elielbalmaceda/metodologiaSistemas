@@ -1,4 +1,3 @@
-
 import java.time.LocalDate; //Importacion LocalDate para manejar fechas
 
 // Clase Venta para gestiona las ventas de vehiculos
@@ -112,6 +111,5 @@ public class Venta {
             vehiculo.getMarca(), vehiculo.getModelo(), vehiculo.getAnio(),
             vendedor.getNombre(), montoTotal, formaPago);
     }
-
 }
 

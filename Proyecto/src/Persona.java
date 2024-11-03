@@ -1,9 +1,9 @@
 // Clase base para persona (aplicando herencia)
-//Clase abstracta que sirve como base para represntar una persona.
+//Clase abstracta que sirve como base para representar una persona.
 //Al ser abstracta, no se pueden crear objetos directamente de esta clase (Creamos en la clase App)
 public abstract class Persona {
     //Atributos protegidos que heredaran las clases hijas
-    /*Protected significa que solo es visible ese atributo desde una de las clases hijas y no desde otra clase */
+    /*Protected restringe el acceso a funciones y variables a una clase específica y sus clases derivadas */
     protected String nombre;
     protected String dni;
     protected String telefono;
