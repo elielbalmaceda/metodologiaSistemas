@@ -103,7 +103,7 @@ public class SistemaVentaVehiculos {
         public void mostrarClientes() {
             System.out.println("CLIENTES REGISTRADOS:");
             System.out.println("-".repeat(40));
-            if (clientes.isEmpty()) {
+            if (clientes.isEmpty()) { //Verifica si la lista esta vacia 
                 System.out.println("No hay clientes registrados.");
             } else {
                 for (Cliente cliente : clientes) { 
@@ -174,7 +174,7 @@ public class SistemaVentaVehiculos {
             
             // Totales
             System.out.println("TOTALES:");
-            System.out.println("- Clientes registrados: " + clientes.size());
+            System.out.println("- Clientes registrados: " + clientes.size()); //size() devuelve el numero que haya en la lista en este caso de clientes
             System.out.println("- Vendedores activos: " + vendedores.size());
             System.out.println("- Vehiculos en inventario: " + vehiculos.size());
             System.out.println("- Ventas realizadas: " + ventas.size());
